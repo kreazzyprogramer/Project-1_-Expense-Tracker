@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #101820;
+}
+
+.balance {
+  margin-top: 25px;
+  margin-right: -10px;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Container {
+  max-width: 350px;
+  min-height: 500px;
+  margin: 10px auto;
+  background-color: #101820;
+  box-shadow: 14px 14px 0px 0 #000000;
+  margin-top: 75px;
+  padding: 12px 70px;
+  color: rgba(242.00000077486038, 170.0000050663948, 76.0000030696392, 1);
+  border: 0.1px solid #f2aa4c;
+  border-radius: 5px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.Container .balance-heading {
+  margin: 25px;
+  /* background-color: #DBE6FD; */
+}
+
+.Expnce-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: #DBE6FD; */
+  color: #e8f0f2;
+  padding: 10px;
+  margin: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.transaction-form input {
+  width: 90%;
+  padding: 7px;
+  margin: 10px;
+}
+
+.Transaction-list {
+  margin: 10px;
+}
+
+.Transaction-list > li {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 5px;
+  min-width: 280px;
+  /* background-color: #181025; */
+}
+
+.Transaction-list > li > span {
+  width: 100%;
+  color: #e8f0f2;
+  padding: 10px;
+}
+
+.input-heading {
+  margin-top: 5px;
+}
+
+.transaction-form button {
+  width: 100%;
+  margin: 10px;
+  height: 40px;
+  background-color: #101820;
+  color: #dbe6fd;
+  border: none;
+  /* border: 1px solid #293b5f; */
+  border-radius: 25px;
+}
+
+.transaction-form button:hover {
+  background-color: #f2aa4c;
+  cursor: pointer;
+  border: 10px #000000;
+  border-radius: 25px;
+}
+
+.balance-heading {
+}
