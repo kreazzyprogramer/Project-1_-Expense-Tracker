@@ -92,6 +92,7 @@ function Child() {
                             required
                             onChange={(e) => setAmount(e.target.value)}
                         />
+                        <h5 style={{ textAlign: "center", letterSpacing: "2px" }}> Use + For Income | - For Expense</h5>
                     </label>
                     <br />
                     <button className="btn" type="submit">
