@@ -32,72 +32,77 @@ function Child() {
     };
 
     return (
-        <div className="Container">
-            <h1 className="text-center">Expense Tracker</h1>
+        <div>
 
-            <div className="balance">
-                <h3>Remaning Balance</h3>
-                <h3 style={{ color: "white", fontSize: "30px" }}>
-                    {getIncome() + getExpense()}
-                </h3>
-            </div>
+            <div className="Container">
+                <h1 className="text-center">Expense Tracker</h1>
 
-            <div className="Expnce-container">
-                <h3 style={{ color: "green" }}>
-                    Income <br /> {getIncome()}{" "}
-                </h3>
-                <h3 style={{ color: "RED" }}>
-                    Expense <br /> {getExpense()}
-                </h3>
-            </div>
-            <h3>Transaction History</h3>
-            <hr />
-            <ul className="Transaction-list">
-                {transaction.map((transObj, ind) => {
-                    return (
-                        <li>
-                            <span> {transObj.desc} </span>
-                            <span style={{ marginLeft: "160px" }}> {transObj.amount} </span>
-                        </li>
-                    );
-                })}
-            </ul>
+                <div className="balance">
+                    <h3>Remaning Balance</h3>
+                    <h3 style={{ color: "white", fontSize: "20px" }}>
+                        {getIncome() + getExpense()}
+                    </h3>
+                </div>
 
-            <h3>Add New Transaction</h3>
-            <hr />
+                <div className="Expnce-container">
+                    <h3 style={{ color: "green" }}>
+                        Income <br /> {getIncome()}{" "}
+                    </h3>
+                    <h3 style={{ color: "RED" }}>
+                        Expense <br /> {getExpense()}
+                    </h3>
+                </div>
+                <h3>Transaction History</h3>
+                <hr />
+                <ul className="Transaction-list">
+                    {transaction.map((transObj, ind) => {
+                        return (
+                            <li>
+                                <span> {transObj.desc} </span>
+                                <span style={{ marginLeft: "160px" }}> {transObj.amount} </span>
+                            </li>
+                        );
+                    })}
+                </ul>
 
-            <form className="transaction-form" onSubmit={handleSubmit}>
-                <label>
-                    <span className="input-heading"> Enter Description </span>
+                <h3>Add New Transaction</h3>
+                <hr />
+
+                <form className="transaction-form" onSubmit={handleSubmit}>
+                    <label>
+                        <span className="input-heading"> Enter Description </span>
+                        <br />
+                        <input
+                            type="text"
+                            value={newDesc}
+                            placeholder="Enter Description"
+                            required
+                            onChange={(e) => setDesc(e.target.value)}
+                        />
+                    </label>
                     <br />
-                    <input
-                        type="text"
-                        value={newDesc}
-                        placeholder="Enter Description"
-                        required
-                        onChange={(e) => setDesc(e.target.value)}
-                    />
-                </label>
-                <br />
 
-                <label>
-                    <span className="input-heading"> Enter Amount </span>
+                    <label>
+                        <span className="input-heading"> Enter Amount </span>
+                        <br />
+                        <input
+                            type="number"
+                            value={newAmount}
+                            placeholder="Enter Amount"
+                            required
+                            onChange={(e) => setAmount(e.target.value)}
+                        />
+                    </label>
                     <br />
-                    <input
-                        type="number"
-                        value={newAmount}
-                        placeholder="Enter Amount"
-                        required
-                        onChange={(e) => setAmount(e.target.value)}
-                    />
-                </label>
-                <br />
-                <button className="btn" type="submit">
+                    <button className="btn" type="submit">
 
-                    ADD NEW TRANSACTION
-                </button>
-            </form>
-        </div>
+                        ADD NEW TRANSACTION
+                    </button>
+                </form>
+            </div>
+            <h3 className="mainHeading">MADE WITH ❤️</h3>
+
+        </div >
     );
 }
 
