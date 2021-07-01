@@ -29,6 +29,7 @@ body {
   border: 0.1px solid #f2aa4c;
   border-radius: 5px;
   font-family: "Ubuntu", sans-serif;
+  flex-wrap: wrap;
 }
 
 .Container .balance-heading {

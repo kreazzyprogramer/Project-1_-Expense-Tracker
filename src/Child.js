@@ -33,7 +33,7 @@ function Child() {
 
     return (
         <div className="Container">
-            <h1 className="text-center">Expence Trtacker</h1>
+            <h1 className="text-center">Expense Tracker</h1>
 
             <div className="balance">
                 <h3>Remaning Balance</h3>
@@ -47,7 +47,7 @@ function Child() {
                     Income <br /> {getIncome()}{" "}
                 </h3>
                 <h3 style={{ color: "RED" }}>
-                    Expence <br /> {getExpense()}
+                    Expense <br /> {getExpense()}
                 </h3>
             </div>
             <h3>Transaction History</h3>
