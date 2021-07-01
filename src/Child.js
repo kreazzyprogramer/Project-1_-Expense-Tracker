@@ -4,7 +4,7 @@ import { TransactionContext } from "./transContext";
 function Child() {
     let { transaction, addtransaction } = useContext(TransactionContext);
     let [newDesc, setDesc] = useState("");
-    let [newAmount, setAmount] = useState(null);
+    let [newAmount, setAmount] = useState(0);
 
     const handleSubmit = (event) => {
         event.preventDefault();
